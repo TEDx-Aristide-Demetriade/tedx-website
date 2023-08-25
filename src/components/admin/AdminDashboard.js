@@ -362,28 +362,9 @@ function AdminDashboard() {
   useEffect(() => {
     console.log(authToken);
     if (authToken) {
-      handleDelOldPending();
       fethcAlldata();
     }
   }, [authToken]);
-
-  const handleDelOldPending = async () => {
-    await deletePendingData()
-      .then(() => {
-        getAllProducts()
-          .then((res) => {
-            console.log(res.data);
-            setDataSource(res.data);
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    return;
-  };
 
   const fethcAlldata = async () => {
     try {

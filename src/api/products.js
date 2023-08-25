@@ -26,20 +26,11 @@ export const getOrderedTickets = async () => {
   }
 };
 
-export const deletePendingData = async () => {
-  try {
-    return await instance.delete("product/old_pending");
-  } catch (error) {
-    throw new Error(error?.response?.data?.error || "Error delete tickets");
-  }
-};
-
 export const deleteTicket = async (id) => {
   try {
     if (!id) {
       throw new Error("No ID provided");
     }
-    await instance.delete("product/old_pending");
     return await instance.delete(`product/${id}`);
   } catch (error) {
     throw new Error(error?.response?.data?.error || "Error deleting ticket");
