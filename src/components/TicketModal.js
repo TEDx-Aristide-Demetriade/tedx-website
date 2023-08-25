@@ -131,7 +131,7 @@ const TicketModal = ({ isShow, setIsShow, numberOfTickets }) => {
                   Varsta
                 </label>
                 <input
-                  type="text"
+                  type="number"
                   className="form-control"
                   id="age"
                   name="age"
