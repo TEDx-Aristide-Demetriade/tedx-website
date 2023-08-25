@@ -75,7 +75,7 @@ const TicketModal = ({ isShow, setIsShow, numberOfTickets }) => {
       <div className="modal-dialog modal-wrap">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title">Fill in the Fields</h5>
+            <h5 className="modal-title">Completati campurile</h5>
             <button
               type="button"
               className="btn-close"
