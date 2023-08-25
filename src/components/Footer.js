@@ -1,6 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import logo from './resources/pictures/logo-black.png';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+
 
 
 const Footer = () => {
@@ -12,7 +15,7 @@ const Footer = () => {
         <div className="col-md-4">
              {/* Image */}
              <img
-            src="https://via.placeholder.com/500x200?text=Image"
+            src={logo}
             alt="Image"
             className="img-fluid"
           />
@@ -20,29 +23,29 @@ const Footer = () => {
         {/* Column 2 */}
         <div className="col-md-4">
         <div className="text-center">
-              <h4>Sitemap</h4>
-            </div>
+        <h4 className="font-weight-bold" style={{ fontFamily: 'Montserrat', fontSize: '32px' }}>Sitemap</h4>
+               </div>
           <div className="row">
             <div className="col-4">
-              <p>Text 1</p>
-              <p>Text 2</p>
-              <p>Text 3</p>
+              <p>Despre noi</p>
+              <p>Vorbitori</p>
+              <p>Echipa</p>
             </div>
             <div className="col-4">
-            <p>Text 1</p>
-              <p>Text 2</p>
-              <p>Text 3</p>
+            <p>Bilete</p>
+              <p>Sponsori</p>
+              <p>Contact</p>
             </div>
             <div className="col-4">
-            <p>Text 1</p>
-              <p>Text 2</p>
-              <p>Text 3</p>
+            <p>Testimoniale</p>
+              <p>Feedback</p>
+              <p>Live events</p>
             </div>
           </div>
         </div>
         {/* Column 3 */}
         <div className="col-md-4">
-          <h4>Business Address</h4>
+          <h4>Business Info</h4>
           <p>Address Line 1</p>
           <p>Email: example@example.com</p>
           <p>Tel: +123456789</p>
@@ -72,14 +75,20 @@ const Footer = () => {
             <span className="mx-2">|</span>
             <a href="#">Terms &amp; Conditions</a>
           </div>
+    
           <div className="col text-center p-3">
-            <p>Follow us:</p>
-            <a href="#"><i className="fab fa-facebook"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-          </div>
+          <p style={{ marginBottom: '0.5rem', display: 'inline-block', verticalAlign: 'middle' }}>Follow us:</p>
+          <span>
+            <a href="#"><FaFacebook className="social-icon" /></a>
+            <span className="icon-space" />
+            <a href="#"><FaTwitter className="social-icon" /></a>
+            <span className="icon-space" />
+            <a href="#"><FaInstagram className="social-icon" /></a>
+          </span>
         </div>
       </div>
+        </div>
+      
 
         
           
