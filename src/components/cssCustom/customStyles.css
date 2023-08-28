@@ -8,6 +8,22 @@
 /* Assuming this is your CSS */
 .nav-item.active .nav-link {
   color: #FF2B06; /* Your desired color */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.standard-image {
+  width: 173px; /* Adjust width as needed */
+  height: 250px; /* Adjust height as needed */
+}
+
+.carousel-video {
+  height: 650px;
+  overflow: hidden; /* Adjust the height as needed */
+}
+
+.carousel-item {
+  height: 750px; /* Set the desired fixed height */
 }
 .card {
   width: 30vw;
@@ -52,8 +68,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 2; 
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 .checkboxes{
   display: flex;
@@ -71,3 +87,12 @@
 .numbers-of-tickets p{
   font-weight: bold;
 }
+
+.carousel-image {
+  object-fit: contain; /* Maintain image aspect ratio */
+  max-height: 100%; /* Limit image height to fit within carousel item */
+  max-width: 100%; /* Limit image width to fit within carousel item */
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');

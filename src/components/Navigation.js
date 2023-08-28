@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "./images/your-logo.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./cssCustom/customStyles.css"; // Create a CSS file for styling
 import { AppContext } from "../store/AppContext";
+import logo from './resources/pictures/logo-white.png';
 
 function Navigation() {
   const location = useLocation();
@@ -35,7 +35,7 @@ function Navigation() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img src={logo} alt="Logo" width="50" height="50" />
+          <img src={logo} alt="Logo" width="200" height="50" />
         </Link>
         <button
           className="navbar-toggler"
@@ -54,6 +54,8 @@ function Navigation() {
           id="navbarNav"
         >
           <ul className="navbar-nav">
+
+            <li className={`nav-item ${location.pathname === '/about' ? 'active' : ''}`}>
             <li
               className={`nav-item ${
                 location.pathname === "/" ? "active" : ""
@@ -163,6 +165,9 @@ function Navigation() {
               >
                 Buy Ticket
               </Link>
+            <li className={`nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>
+            <button className="btn custom-button">BILETE</button>
+
             </li>
           </ul>
         </div>

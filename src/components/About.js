@@ -2,16 +2,16 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import image1 from './resources/pictures/image00003.jpeg';
 
 function About () {
   return (
     <><div className="container py-5">
       <div className="row">
         <div className="col text-center py-5">
-          <h1>About Us</h1>
+          <h1>Despre eveniment</h1>
           <p>
-            We are a passionate group of individuals committed to creating impactful presentations
-            for our audience. Replace this with information about your organization or event.
+          Cum a început totul? O poveste ce își deschide timid filele anul trecut, în septembrie 2022. Am căpătat încredere în urma a 3 aplicări pentru organizarea evenimentului, 2 respingeri dureroase, 9 luni de așteptare și un proces învățare continuă. 
           </p>
         </div>
       </div>
@@ -20,28 +20,34 @@ function About () {
           {/* Left Column */}
           <div className="col-md-6">
             <div className="mb-4">
-              <h1>Section 1</h1>
+            
               <p>
-                This is the first section's description. Replace with your content.
+              Într-o zi de vara, la începutul lunii mai, munca noastră a început să prindă contur. A fost o explozie de fericire. Am sărit atât de tare încât am pierdut cheia de la apartament. 
               </p>
             </div>
             <div className="mb-4">
-              <h1>Section 2</h1>
-              <p>
-                This is the second section's description. Replace with your content.
+               <p>
+              Atunci am primit vestea că TED Global ne-a aprobat licența. TEDxAristide Demetriade este numele evenimentului ce reaprinde flacăra cunoașterii în Timișoara.
               </p>
             </div>
             <div>
-              <h1>Section 3</h1>
-              <p>
-                This is the third section's description. Replace with your content.
+                <p>
+                FIRESTARTERS este tema evenimentului. Oameni din domenii, culturi și sfere profesionale diferite își reunesc ideile la Timișoara. Astfel, orașul nostru devine nu doar Capitală Culturală Europeană. Timișoara devine orașul citadin deschis cunoașterii și oamenilor cu idei îndrăznețe
               </p>
+            </div>
+            <div>
+                <p>
+                Oh, vom susține vorbitori ale căror idei transcend în perioade de criză. Sunt oameni care ne învață cum să reaprindem flacăra interioară în momente de criză, pentru a produce o schimbare benefică lumii în care trăim.              </p>
+            </div>
+            <div>
+                <p>
+                Flacăra ce arde în interiorul fiecăruia ne reîntoarce la adevăratul sens al ființei umane. Din 24 noiembrie 2023 vom îmbrățișa acest spirit pentru a tinde spre infinit.              </p>
             </div>
           </div>
           {/* Right Column */}
-          <div className="col-md-6">
-            <img src="https://via.placeholder.com/820x560" alt="Empty Image" className="img-fluid" />
-          </div>
+          <div className="col-md-6 d-flex align-items-center justify-content-center">
+  <img src={image1} alt="Empty Image" className="img-fluid" />
+</div>
         </div>
       </div>
    
@@ -58,7 +64,7 @@ function About () {
             </h2>
           </div>
           <div className="col-lg-6 d-flex justify-content-center align-items-right p-4">
-            <button className="btn custom-button">Buy Now</button>
+            <button className="btn custom-button">BILETE</button>
           </div>
         </div>
       </div>
@@ -67,7 +73,7 @@ function About () {
       
    {/* Testimonials */}
    <div className="text-center my-5">
-        <h1>Testimonials</h1>
+        <h1>Testimoniale</h1>
           {/* White Space */}
      <div style={{ height: '100px' }}></div>
         <div id="carouselExampleIndicators" className="carousel slide " data-bs-ride="carousel">
