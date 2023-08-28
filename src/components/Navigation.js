@@ -56,6 +56,7 @@ function Navigation() {
           <ul className="navbar-nav">
 
             <li className={`nav-item ${location.pathname === '/about' ? 'active' : ''}`}>
+              </li>
             <li
               className={`nav-item ${
                 location.pathname === "/" ? "active" : ""
@@ -163,10 +164,9 @@ function Navigation() {
                 to="/buy-ticket"
                 style={{ visibility: isLoggedIn ? "hidden" : "visible" }}
               >
-                Buy Ticket
+                BILETE
               </Link>
-            <li className={`nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>
-            <button className="btn custom-button">BILETE</button>
+       
 
             </li>
           </ul>
