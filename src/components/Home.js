@@ -53,6 +53,8 @@ function Home () {
 </div>
 
 
+
+
       <div className="container">
 
       
@@ -75,7 +77,7 @@ function Home () {
           <h2></h2>
         </div>
         <div className="col text-center col-md-6">
-          <h2>TEDxARISTIDE</h2>
+          <h2>TEDxARISTIDE DEMETRIADE</h2>
         </div>
       </div>
 
@@ -100,7 +102,7 @@ function Home () {
         <div className="col-md-6">
           {/* Image */}
           <img
-            src="https://via.placeholder.com/800x600?text=Image"
+            src={imagine1}
             alt="Image"
             className="img-fluid"
           />
@@ -108,7 +110,7 @@ function Home () {
         <div className="col-md-6 col-md-6 d-flex flex-column justify-content-center">
           {/* Right content */}
           <div>
-          <h3>Subtitle</h3>
+          <h3>Tema evenimentului</h3>
           <p style={{ fontFamily: "Body P" }}>
           Drumul scânteilor de foc este un carusel de emoții, experiențe și idei creative ce schimbă lumea în care trăim.
           </p>

@@ -3,6 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import image1 from './resources/pictures/image00003.jpeg';
+import videoSource2 from './resources/videos/bfc8385a-c35c-4fca-ba7e-c021f82c27a6.mp4';
 
 function About () {
   return (
@@ -46,7 +47,9 @@ function About () {
           </div>
           {/* Right Column */}
           <div className="col-md-6 d-flex align-items-center justify-content-center">
-  <img src={image1} alt="Empty Image" className="img-fluid" />
+          <video className="d-block carousel-item-test" autoPlay loop muted>
+        <source src={videoSource2} type="video/mp4" />
+      </video>
 </div>
         </div>
       </div>
