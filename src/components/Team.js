@@ -9,13 +9,18 @@ import trainer3 from './resources/echipa/traineri/Ioana Popescu.jpeg';
 import trainer4 from './resources/echipa/traineri/Iszabella Takacs.jpeg';
 
 import trainer5 from './resources/echipa/traineri/Oana Joumah.jpeg';
+import './cssCustom/team.css'; 
 
-
+import allPhotos from './allphotos';
 
 
 
 function Team() {
-  const [selectedPhoto, setSelectedPhoto] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const photosPerPage = 8;
+  const photos = allPhotos; // Array of all photo paths
+
+  const [selectedPhoto, setSelectedPhoto] = useState(photos[0]); // Set the first photo as active initially
   const [selectedHeader, setSelectedHeader] = useState('');
   const [selectedParagraph, setSelectedParagraph] = useState('');
 
@@ -26,19 +31,18 @@ function Team() {
   };
   return (
     <div>
-      <div className="container py-5">
+      <div className="container .container-team py-5 py-5-team">
         <div className="row">
-          <div className="col text-center ">
-            <h1>Echipa</h1>
+          <div className="col text-center text-center-team ">
+            <h1>Echipa FIRESTARTERS</h1>
             <p>
-              We are a passionate group of individuals committed to creating impactful presentations
-              for our audience. Replace this with information about your organization or event.
+         
             </p>
           </div>
         </div>
       </div>
 
-      <div className="container">
+      <div className="container .container-team">
       <div className="row justify-content-center">
           <div className="col-md-2 d-flex justify-content-center">
           </div>
@@ -54,80 +58,62 @@ function Team() {
         </div>
         <div className="row justify-content-center">
           <div className="col-md-2 d-flex justify-content-center">
-            <img src={trainer1} alt="Placeholder" className="img-fluid mb-3 standard-image" />
+            <img src={trainer1} alt="Placeholder" className="img-fluid mb-3 standard-image-team" />
           </div>
           <div className="col-md-2 d-flex justify-content-center">
-            <img src={trainer2} alt="Placeholder" className="img-fluid mb-3 standard-image" />
+            <img src={trainer2} alt="Placeholder" className="img-fluid mb-3 standard-image-team" />
           </div>
           <div className="col-md-2 d-flex justify-content-center">
-            <img src={trainer3} alt="Placeholder" className="img-fluid mb-3 standard-image" />
+            <img src={trainer3} alt="Placeholder" className="img-fluid mb-3 standard-image-team" />
           </div>
           <div className="col-md-2 d-flex justify-content-center">
-            <img src={trainer4} alt="Placeholder" className="img-fluid mb-3 standard-image" />
+            <img src={trainer4} alt="Placeholder" className="img-fluid mb-3 standard-image-team" />
           </div>
           <div className="col-md-2 d-flex justify-content-center">
-            <img src={trainer5} alt="Placeholder" className="img-fluid mb-3 standard-image" />
-          </div>
-        </div>S
-        <div className="row justify-content-center">
-          <div className="col-md-2 d-flex justify-content-center">
-            <img src="https://via.placeholder.com/173x76" alt="Placeholder" className="img-fluid mb-3" />
-          </div>
-          <div className="col-md-2 d-flex justify-content-center">
-            <img src="https://via.placeholder.com/173x76" alt="Placeholder" className="img-fluid mb-3" />
-          </div>
-          <div className="col-md-2 d-flex justify-content-center">
-            <img src="https://via.placeholder.com/173x76" alt="Placeholder" className="img-fluid mb-3" />
-          </div>
-          <div className="col-md-2 d-flex justify-content-center">
-            <img src="https://via.placeholder.com/173x76" alt="Placeholder" className="img-fluid mb-3" />
-          </div>
-          <div className="col-md-2 d-flex justify-content-center">
-            <img src="https://via.placeholder.com/173x76" alt="Placeholder" className="img-fluid mb-3" />
+            <img src={trainer5} alt="Placeholder" className="img-fluid mb-3 standard-image-team" />
           </div>
         </div>
+       
       </div>
-      <div className="container py-5">
+      <div className="container container-team py-5 py-5-team">
       <div className="row">
         {/* First Column */}
         <div className="col-md-6">
-          <div className="text-center">
-            <h2>Echipa</h2>
-            <p>This is a paragraph for the first column.</p>
-          </div>
-          <div className="row">
-            <div className="col-md-3 text-center">
-              <img
-                src={curator}
-                alt="Placeholder"
-                className="img-fluid mb-3"
-                onClick={() =>
-                  handlePhotoClick(
-                    curator,
-                    'Header 1',
-                    'Paragraph for Image 1'
-                  )
-                }
-              />
-            </div>
-            <div className="col-md-3 text-center">
-              <img
-                src={trainer1}
-                alt="Placeholder"
-                className="img-fluid mb-3"
-                onClick={() =>
-                  handlePhotoClick(
-                    trainer1,
-                    'Header 1',
-                    'Paragraph for Image 1'
-                  )
-                }
-              />
-            </div>
-            {/* Add more photo elements with onClick handlers */}
-          </div>
-          {/* ... Add more rows with photos ... */}
+        <div className="text-center text-center-team ">
+          <h2>Echipa</h2>
+          <p></p>
         </div>
+        <div className="row">
+      {photos.slice((currentPage - 1) * photosPerPage, currentPage * photosPerPage).map((photo, index) => (
+        <div className={`col-md-3  text-center text-center-team  ${selectedPhoto === photo ? 'active-team' : ''}`} key={index}>
+          <img
+            src={photo}
+            alt={`Photo ${index + 1}`}
+            className="img-fluid standard-image-team"
+            onClick={() => handlePhotoClick(photo, 'Header 1', 'Paragraph for Image 1')}
+          />
+        </div>
+      ))}
+    </div>
+          {/* Pagination buttons */}
+  <div className="pagination-team">
+    <button className='button-team'
+      onClick={() => setCurrentPage(currentPage > 1 ? currentPage - 1 : 1)}
+      disabled={currentPage === 1}
+    >
+      &lt;
+    </button>
+    <button className='button-team'
+      onClick={() =>
+        setCurrentPage(currentPage < Math.ceil(photos.length / photosPerPage) ? currentPage + 1 : currentPage)
+      }
+      disabled={currentPage === Math.ceil(photos.length / photosPerPage)}
+    >
+      &gt;
+    </button>
+  </div>
+      </div>
+      
 
       {/* Second Column */}
       <div className="col-md-6">
@@ -148,25 +134,25 @@ function Team() {
       </div>
     </div>
 
+
+
        {/* Additional Container */}
-       <div className="container py-5">
+       <div className="container .container-team py-5 py-5-team">
         <div className="row justify-content-center">
-          <div className="col-md-6 text-center">
-            <h2>Centered Text</h2>
+          <div className="col-md-6 text-center text-center-team ">
+            <h2>"Abilitatea de a explica, inform, inspira si convinge este acum MULT mai importanta ca niciodata"
+           </h2>
+                    
             <p>
-              This is a paragraph below the centered text.
-            </p>
-            <div className="d-flex justify-content-center mt-4">
-              <img src="https://via.placeholder.com/44x44" style={{ borderRadius: '50%' }} alt="Placeholder" />
-            </div>
-            <p>
-              This is a text below the centered placeholder.
+            Christian Anderson - Founder TED Global
             </p>
           </div>
         </div>
       </div>
         {/* White Space */}
      <div style={{ height: '100px' }}></div>
+
+     
     </div>
     
     

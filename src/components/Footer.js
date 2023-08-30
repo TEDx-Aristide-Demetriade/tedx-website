@@ -2,7 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import logo from './resources/pictures/logo-black.png';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'; // For other icons, use their corresponding import statements
+
 
 
 
@@ -27,28 +28,28 @@ const Footer = () => {
                </div>
           <div className="row">
             <div className="col-4">
-              <p>Despre noi</p>
-              <p>Vorbitori</p>
-              <p>Echipa</p>
+            <p><a className="links-color" href="/about">Despre noi</a></p>
+    <p><a className="links-color" href="/speakers">Vorbitori</a></p>
+    <p><a className="links-color" href="/team">Echipa</a></p>
             </div>
             <div className="col-4">
-            <p>Bilete</p>
-              <p>Sponsori</p>
-              <p>Contact</p>
+            <p><a  className="links-color" href="/buy-ticket">Bilete</a></p>
+    <p><a className="links-color" href="/sponsors">Sponsori</a></p>
+    <p><a className="links-color" href="/contact">Contact</a></p>
             </div>
-            <div className="col-4">
-            <p>Testimoniale</p>
-              <p>Feedback</p>
-              <p>Live events</p>
+            <div className="col-4 ">
+            <p><a className="links-color" href="/">Home</a></p>
+    <p><a className="links-color" href="/admin">Admin</a></p>
+    <p><a className="links-color" href="#"></a></p>
             </div>
           </div>
         </div>
         {/* Column 3 */}
         <div className="col-md-4 ">
           <h4>Business Info</h4>
-          <p>Address Line 1</p>
-          <p>Email: example@example.com</p>
-          <p>Tel: +123456789</p>
+          <p>Address: Strada Divizia 9 Cavalerie 64, Timișoara</p>
+          <p>Email: organizare@tedxaristidedemetriade.com</p>
+          <p>Tel: +40 740 684 642</p>
         </div>
       </div>
       
@@ -66,26 +67,28 @@ const Footer = () => {
     <div className="container">
         <div className="row">
           <div className="col text-center p-3">
-            <p>&copy; {new Date().getFullYear()} TEDxARISTIDE Website</p>
+            <p>&copy; {new Date().getFullYear()} TEDxARISTIDE DEMETRIADE</p>
           </div>
           <div className="col text-center p-3">
-            <a href="#">Cookie Policy</a>
+            <a className="links-color" href="#">Cookie Policy</a>
             <span className="mx-2">|</span>
-            <a href="#">Privacy Policy</a>
+            <a  className="links-color" href="#">Privacy Policy</a>
             <span className="mx-2">|</span>
-            <a href="#">Terms &amp; Conditions</a>
+            <a className="links-color" href="#">Terms &amp; Conditions</a>
           </div>
     
           <div className="col text-center p-3">
-          <p style={{ marginBottom: '0.5rem', display: 'inline-block', verticalAlign: 'middle' }}>Follow us:</p>
-          <span>
-            <a href="#"><FaFacebook className="social-icon" /></a>
-            <span className="icon-space" />
-            <a href="#"><FaTwitter className="social-icon" /></a>
-            <span className="icon-space" />
-            <a href="#"><FaInstagram className="social-icon" /></a>
-          </span>
-        </div>
+  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <p style={{ marginBottom: '0.5rem' }}>Follow us:</p>
+    <span className="social-icons-container">
+      <a href="#" className="social-icon"><FaFacebook /></a>
+      <span className="icon-space" />
+      <a href="#" className="social-icon"><FaInstagram /></a>
+      <span className="icon-space" />
+      <a href="#" className="social-icon"><FaLinkedin /></a>
+    </span>
+  </div>
+</div>
       </div>
         </div>
       

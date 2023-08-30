@@ -1,0 +1,129 @@
+/* team.css */
+/* General styling */
+.container-team {
+    padding: 30px;
+  }
+  
+  .text-center-team  {
+    text-align: center;
+  }
+  
+  .py-5-team  {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  /* Team heading */
+  .team-heading-team .h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .team-heading-team .p {
+    font-size: 1.1rem;
+  }
+  
+  /* Team member cards */
+  .team-member-team  {
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+  }
+  
+  .team-member-team .img  {
+    border-radius: 50%;
+    max-width: 100px;
+    transition: transform 0.3s;
+  }
+  
+  .team-member-team  .p  {
+    font-size: 14px;
+  }
+  
+  .team-member-team:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-5px);
+  }
+  
+  /* Bio container */
+  .bio-container-team {
+    display: none;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+  }
+  
+  .bio-container-team.active {
+    display: block;
+  }
+  
+  .bio-container-team .img{
+    max-width: 100px;
+    border-radius: 50%;
+  }
+  
+  /* Centered text section */
+  .centered-text-team .h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .centered-text-team .p{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .centered-placeholder-team {
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .centered-placeholder-team:hover {
+    transform: scale(1.1);
+  }
+  .team-member-team {
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+  }
+  /* team.css */
+.standard-image-team {
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  
+  
+  /* Resize team member images */
+  .team-member-team .img{
+    border-radius: 50%;
+    max-width: 30px; /* Adjust the max-width to your preference */
+    transition: transform 0.3s;
+  }
+  /* Add this to your CSS */
+.pagination-team {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .pagination-team .button-team{
+    background-color: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .pagination-team .button-team:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .active-team {
+    border: 1px solid #d1c7c4; /* Adjust the color as needed */
+  }
+    

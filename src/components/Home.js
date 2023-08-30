@@ -21,35 +21,10 @@ function Home () {
         <source src={videoSource} type="video/mp4" />
       </video>
     </div>
-    <div className="carousel-item">
-      <img src={imagine1} alt="Image 1" className="d-block w-100" />
-    </div>
-    <div className="carousel-item">
-      <img
-        src="https://via.placeholder.com/800x400?text=Image+2"
-        alt="Image 2"
-        className="d-block w-100"
-      />
-    </div>
+    
   </div>
-  <button
-    className="carousel-control-prev"
-    type="button"
-    data-bs-target="#myCarousel"
-    data-bs-slide="prev"
-  >
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button
-    className="carousel-control-next"
-    type="button"
-    data-bs-target="#myCarousel"
-    data-bs-slide="next"
-  >
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
+  
+
 </div>
 
 
@@ -123,14 +98,15 @@ function Home () {
           Ne reîntoarcem la noi înșine. Redescoperim diferitele forme ale autenticității. Creionăm un puzzle al oamenilor care îndrăznesc să viseze măreț.
           </p>
           <p style={{ fontFamily: "Body P" }}>
-          Energie. Trăire. Exuberanță. Credință. Noutate. Vis. Bunătate. Umanitate.
-          Descriu cu prisosință ideile vorbitorilor noștri, care devin pe scena 
-          TEDxAristide Demetriade veritabili FIRESTATERS ai cunoașterii.
+          Vom învăța de la cei 12 vorbitori, cum în momente de criză putem să reaprindem flacăra din interiorul nostru, pentru a reuși în viață
+        
+          </p>
+          <p style={{ fontFamily: "Body P" }}>
+          Toamna aceasta, pe 24 noiembrie 2023, te invităm să crezi în visul nostru. 
+          Te invităm să crezi  în puterea unei simple idei ce face să vibreze o lume întreagă.
           </p>
           {/* Learn More Button */}
-          <div className="text-center mt-3">
-            <button className="btn custom-button">Learn More</button>
-          </div>
+        
           </div>
         </div>
       </div>
@@ -142,6 +118,7 @@ function Home () {
    <div className="container-fluid bg-black text-white d-flex align-items-center justify-content-center p-0" style={{ height: '307px', margin: '0 -15px' }}>
         <div className="row col-lg-6">
           <div className="d-flex flex-column justify-content-left p-4">
+            <p>Data: 24 noiembrie 2023 - Locatie: Venue, Timisoara</p>
             <h2 className="text-center" style={{ fontSize: '25px', lineHeight: '1.5', marginBottom: '15px' }}>
               COUNTER TILL TEDxARISTIDE DEMETRIADE Event
             </h2>

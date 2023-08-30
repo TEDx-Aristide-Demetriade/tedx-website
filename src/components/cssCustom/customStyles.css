@@ -98,4 +98,31 @@
   display: block;
   margin: 0 auto; /* Center horizontally */
 }
+
+.social-icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon-space {
+  margin: 0 0.5rem;/* Adjust the spacing as needed */
+}
+
+
+.links-color {
+  color:  #ff2b06; /* Replace with the color you want */
+  text-decoration: none; /* Remove the underline if desired */
+}
+.custom-video-container {
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import "~bootstrap-icons/font/bootstrap-icons.css";
