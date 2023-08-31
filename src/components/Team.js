@@ -1,14 +1,14 @@
 import React , { useState }from 'react';
 import curator from './resources/echipa/curator/Dragos_Argint.jpg';
-import trainer1 from './resources/echipa/traineri/Catalina Moleavin.jpeg';
-import trainer2 from './resources/echipa/traineri/Cristina Onofrei.jpeg';
+import trainer1 from './resources/echipa/traineri/Anca Bâc.jpg';
+import trainer2 from './resources/echipa/traineri/WhatsApp Image 2023-08-31 at 08.32.02.jpeg';
 
-import trainer3 from './resources/echipa/traineri/Ioana Popescu.jpeg';
+import trainer3 from './resources/echipa/marketing/Lavinia Pop.jpeg';
 
 
-import trainer4 from './resources/echipa/traineri/Iszabella Takacs.jpeg';
+import trainer4 from './resources/echipa/marketing/Adriana Stamatin.jpeg';
 
-import trainer5 from './resources/echipa/traineri/Oana Joumah.jpeg';
+import trainer5 from './resources/echipa/web/Dragos Bacitea.jpg';
 import './cssCustom/team.css'; 
 
 import allPhotos from './allphotos';
@@ -49,7 +49,7 @@ function Team() {
           <div className="col-md-2 d-flex justify-content-center">
           </div>
           <div className="col-md-2 d-flex justify-content-center">
-            <img src={curator} alt="Placeholder" className="img-fluid mb-3" />
+            <img src={curator} alt="Placeholder" className="img-fluid mb-3 standard-image-team" />
           </div>
           <div className="col-md-2 d-flex justify-content-center">
           </div>
@@ -73,6 +73,14 @@ function Team() {
             <img src={trainer5} alt="Placeholder" className="img-fluid mb-3 standard-image-team" />
           </div>
         </div>
+           {/* White Line */}
+     <div className="container">
+        <div className="row">
+          <div className="col">
+            <hr style={{ backgroundColor: 'white', height: '20px' }} />
+          </div>
+        </div>
+      </div>
        
       </div>
       <div className="container container-team py-5 py-5-team">
@@ -151,6 +159,14 @@ function Team() {
       </div>
         {/* White Space */}
      <div style={{ height: '100px' }}></div>
+        {/* White Line */}
+        <div className="container">
+        <div className="row">
+          <div className="col">
+            <hr style={{ backgroundColor: 'white', height: '20px' }} />
+          </div>
+        </div>
+      </div>
 
      
     </div>

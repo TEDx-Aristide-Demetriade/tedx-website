@@ -16,6 +16,14 @@ function About () {
           </p>
         </div>
       </div>
+       {/* White Line */}
+     <div className="container">
+        <div className="row">
+          <div className="col">
+            <hr style={{ backgroundColor: 'white', height: '20px' }} />
+          </div>
+        </div>
+      </div>
       <div className="container py-5">
         <div className="row">
           {/* Left Column */}
@@ -63,9 +71,12 @@ function About () {
      
        
     {/* Responsive Block */}
-   <div className="container-fluid bg-black text-white d-flex align-items-center justify-content-center p-0" style={{ height: '307px', margin: '0 -15px' }}>
+    {/* Responsive Block */}
+    <div className="container-fluid bg-black text-white d-flex align-items-center justify-content-center p-0" style={{ height: '307px', margin: '0 -15px' }}>
         <div className="row col-lg-6">
           <div className="d-flex flex-column justify-content-left p-4">
+          <h2 className="text-center" style={{ fontSize: '15px', lineHeight: '1.5', marginBottom: '15px' }}>
+            Data: 24 noiembrie 2023 - Locație: Venue, Timișoara</h2>
             <h2 className="text-center" style={{ fontSize: '25px', lineHeight: '1.5', marginBottom: '15px' }}>
               COUNTER TILL TEDxARISTIDE DEMETRIADE Event
             </h2>

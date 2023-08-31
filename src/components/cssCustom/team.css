@@ -91,9 +91,9 @@
   }
   /* team.css */
 .standard-image-team {
-    width: 150px; /* Set the desired width */
-    height: 150px; /* Set the desired height */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    width: 120px; /* Set the desired width */
+    height: 170px; /* Set the desired height */
+    object-fit:cover; /* Maintain aspect ratio and cover the container */
   }
   
   

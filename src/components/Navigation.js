@@ -32,7 +32,7 @@ function Navigation() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <navz className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="Logo" width="200" height="50" />
@@ -162,7 +162,7 @@ function Navigation() {
           </ul>
         </div>
       </div>
-    </nav>
+    </navz>
   );
 }
 
