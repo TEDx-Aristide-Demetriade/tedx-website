@@ -17,7 +17,7 @@ const Footer = () => {
             <img src={logo} alt="Image" className="img-fluid logo" />
             
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mt-4">
             <div className="text-center">
               <h4 className="font-weight-bold">Sitemap</h4>
             </div>
@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
           </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mt-4">
             <h4>Contact Us</h4>
             <p>Strada Divizia 9 Cavalerie 64, Timișoara</p>
             <p>Email: organizare@tedxaristidedemetriade.com</p>
