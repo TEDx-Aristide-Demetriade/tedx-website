@@ -55,7 +55,7 @@ const TicketModal = ({ isShow, setIsShow, numberOfTickets }) => {
     const stripe = await postProduct({
       ...formData,
       quantity: numberOfTickets,
-      amount: 150,
+      amount: 450,
       productItems,
     });
     setFormData(defaultFormData);
