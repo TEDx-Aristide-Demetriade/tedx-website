@@ -28,6 +28,20 @@
 .carousel-item {
   height: 750px; /* Set the desired fixed height */
 }
+
+/* Media query for screens smaller than a specific width (e.g., tablets) */
+@media (max-width: 992px) {
+  .carousel-item {
+    height: auto; /* Let the content determine the height */
+  }
+}
+
+/* Media query for screens smaller than a specific width (e.g., mobile) */
+@media (max-width: 576px) {
+  .carousel-item {
+    height: auto; /* Let the content determine the height */
+  }
+}
 .card {
   width: 30vw;
 }

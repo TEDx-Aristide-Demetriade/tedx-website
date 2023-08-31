@@ -11,7 +11,7 @@ function Speakers() {
           <div className="text-center mb-4">
             <h4>STORYTELLING</h4>
             <h1 className="firestarter-title">Firestarter</h1>
-            <p className="speaker-name">Georgiana Popan</p>
+            <p className="speaker-name">Giorgiana Popan</p>
           </div>
         </div>
 

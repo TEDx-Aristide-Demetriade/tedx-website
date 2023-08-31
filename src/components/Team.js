@@ -21,13 +21,136 @@ function Team() {
   const photos = allPhotos; // Array of all photo paths
 
   const [selectedPhoto, setSelectedPhoto] = useState(photos[0]); // Set the first photo as active initially
-  const [selectedHeader, setSelectedHeader] = useState('');
-  const [selectedParagraph, setSelectedParagraph] = useState('');
+  
+  const photoDetails = [
+    {
+      header: 'Dragos Argint',
+      paragraph: 'Curator',
+    },
+    {
+      header: 'Catalina Moleavin',
+      paragraph: 'Trainer Public Speaking',
+    },
+    {
+      header: 'Cristina Onofrei',
+      paragraph: 'Trainer Public Speaking',
+    },
+    {
+      header: 'Ioana Popescu',
+      paragraph: 'Trainer Public Speaking',
+    },
+    {
+      header: 'Iszabella Takacs',
+      paragraph: 'Trainer Public Speaking',
+    },
+    {
+      header: 'Oana Joumah',
+      paragraph: 'Trainer Public Speaking',
+    },
+    {
+      header: 'Raluca Erimescu',
+      paragraph: 'Trainer Public Speaking',
+    },
+    {
+      header: 'Răzvan Curcubătă',
+      paragraph: 'Trainer Public Speaking',
+    },
+    {
+      header: 'Răzvan Pitulice',
+      paragraph: 'Trainer Public Speaking',
+    },
+    {
+      header: 'Simona Bader',
+      paragraph: 'Trainer Public Speaking',
+    },
+    {
+      header: 'Tatjana Magdin',
+      paragraph: 'Trainer Public Speaking',
+    },
+    {
+      header: 'Vlad Matica',
+      paragraph: 'Trainer Public Speaking',
+    },
+    {
+      header: 'Petru Cojocaru',
+      paragraph: 'Fotograf',
+    },
+    {
+      header: 'Simona Vartolomei',
+      paragraph: 'Fotograf Lead',
+    },
+    {
+      header: 'George Olteanu',
+      paragraph: 'Fotograf',
+    },
+    {
+      header: 'Krisztian Matyas',
+      paragraph: 'Fotograf',
+    },
+    {
+      header: 'Adriana Stamatin',
+      paragraph: 'Design Lead',
+    },
+    {
+      header: 'Alex Drăghici',
+      paragraph: 'Grafic Designer',
+    },
+  
+    {
+      header: 'Luana Munteanu',
+      paragraph: 'Grafic Designer',
+    },
+    {
+      header: 'Lavinia Pop',
+      paragraph: 'Marketing Lead',
+    },
+    {
+      header: 'Paul Pereanu',
+      paragraph: 'Specialist Reels',
+    },
+    {
+      header: 'Ovidiu Grecu',
+      paragraph: 'Moderator',
+    },
+    {
+      header: 'Roxana Ciobotea',
+      paragraph: 'Moderator',
+    },
+    {
+      header: 'Sergiu Foca',
+      paragraph: 'Moderator',
+    },
+    {
+      header: 'Alexandru Hanțari',
+      
+      paragraph: 'Backend Developer',
+    },
+    {
+      header: 'Dragoș Bacîtea',
+      paragraph: 'Web Manager',
+    },
+    {
+      header: 'Mădălina Udrea',
+      paragraph: 'Frontend Developer',
+      
+    },
 
-  const handlePhotoClick = (photoUrl, header, paragraph) => {
+    
+    // ... Add entries for other photos
+  ];
+
+  const [selectedHeader, setSelectedHeader] = useState(photoDetails[0].header);
+  const [selectedParagraph, setSelectedParagraph] = useState(photoDetails[0].paragraph);
+
+
+  const handlePhotoClick = (photoUrl, index) => {
     setSelectedPhoto(photoUrl);
-    setSelectedHeader(header);
-    setSelectedParagraph(paragraph);
+    const actualIndex = (currentPage - 1) * photosPerPage + index;
+
+  // Get the corresponding header and paragraph from photoDetails array
+  const selectedDetails = photoDetails[actualIndex];
+    setSelectedHeader(selectedDetails.header);
+    setSelectedParagraph(selectedDetails.paragraph);
   };
   return (
     <div>
@@ -93,12 +216,12 @@ function Team() {
         </div>
         <div className="row">
       {photos.slice((currentPage - 1) * photosPerPage, currentPage * photosPerPage).map((photo, index) => (
-        <div className={`col-md-3  text-center text-center-team  ${selectedPhoto === photo ? 'active-team' : ''}`} key={index}>
+        <div className={`col-md-3  text-center text-center-team  ${selectedPhoto === photo? 'active-team' : ''}`} key={index}>
           <img
             src={photo}
             alt={`Photo ${index + 1}`}
             className="img-fluid standard-image-team"
-            onClick={() => handlePhotoClick(photo, 'Header 1', 'Paragraph for Image 1')}
+            onClick={() => handlePhotoClick(photo, index)}
           />
         </div>
       ))}
@@ -124,7 +247,7 @@ function Team() {
       
 
       {/* Second Column */}
-      <div className="col-md-6">
+      <div className="col-md-6 second-column">
           {selectedPhoto && (
             <div>
               <img
@@ -142,13 +265,21 @@ function Team() {
       </div>
     </div>
 
+  {/* White Line */}
+  <div className="container">
+        <div className="row">
+          <div className="col">
+            <hr style={{ backgroundColor: 'white', height: '20px' }} />
+          </div>
+        </div>
+      </div>
 
 
        {/* Additional Container */}
        <div className="container .container-team py-5 py-5-team">
         <div className="row justify-content-center">
           <div className="col-md-6 text-center text-center-team ">
-            <h2>"Abilitatea de a explica, inform, inspira si convinge este acum MULT mai importanta ca niciodata"
+            <h2>"Abilitatea de a explica, informa, inspira și convinge este acum MULT mai importantă ca niciodată"
            </h2>
                     
             <p>
@@ -159,14 +290,7 @@ function Team() {
       </div>
         {/* White Space */}
      <div style={{ height: '100px' }}></div>
-        {/* White Line */}
-        <div className="container">
-        <div className="row">
-          <div className="col">
-            <hr style={{ backgroundColor: 'white', height: '20px' }} />
-          </div>
-        </div>
-      </div>
+      
 
      
     </div>

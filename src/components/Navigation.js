@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./cssCustom/customStyles.css"; // Create a CSS file for styling
 import { AppContext } from "../store/AppContext";
 import logo from './resources/pictures/logo-white.png';
+import "./cssCustom/Footer.css"
 
 function Navigation() {
   const location = useLocation();
@@ -32,7 +33,7 @@ function Navigation() {
   };
 
   return (
-    <navz className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="Logo" width="200" height="50" />
@@ -50,30 +51,21 @@ function Navigation() {
         </button>
         <div
           className="collapse navbar-collapse justify-content-end"
-          style={{ display: "flex", gap: "2rem" }}
           id="navbarNav"
         >
           <ul className="navbar-nav">
-
-        
-            <li
-              className={`nav-item ${
-                location.pathname === "/about" ? "active" : ""
-              }`}
-            >
+            <li className={`nav-item ${location.pathname === "/about" ? "active" : ""}`}>
               <Link className="nav-link" to="/about">
                 Despre noi
               </Link>
             </li>
-            <li
-              className={`nav-item ${
-                location.pathname === "/speakers" ? "active" : ""
-              }`}
-            >
+            <li className={`nav-item ${location.pathname === "/speakers" ? "active" : ""}`}>
               <Link className="nav-link" to="/speakers">
                 Vorbitori
               </Link>
             </li>
+          
+
             <li
               className={`nav-item ${
                 location.pathname === "/team" ? "active" : ""
@@ -162,7 +154,7 @@ function Navigation() {
           </ul>
         </div>
       </div>
-    </navz>
+    </nav>
   );
 }
 

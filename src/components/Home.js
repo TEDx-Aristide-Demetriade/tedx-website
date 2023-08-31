@@ -34,27 +34,14 @@ function Home () {
 
       
       {/* White Line (CSS Background) */}
-      <div className="row">
-        <div className="col">
-          <div
-            style={{
-              backgroundColor: 'white',
-              height: '20px',
-              width: '100%',
-            }}
-          />
-        </div>
-      </div>
+      
     
       {/* Big Title */}
-      <div className="row">
-      <div className="col text-center col-md-6">
-          <h2></h2>
-        </div>
-        <div className="col text-center col-md-6">
-          <h2>TEDxARISTIDE DEMETRIADE</h2>
-        </div>
-      </div>
+      <div className="row d-flex justify-content-center justify-content-md-start justify-content-lg-end">
+  <div className="col text-center col-md-6 text-md-start">
+    <h2>TEDxARISTIDE DEMETRIADE</h2>
+  </div>
+</div>
 
         {/* White Line (CSS Background) */}
         <div className="row">
@@ -115,8 +102,8 @@ function Home () {
      {/* White Space */}
      <div style={{ height: '50px' }}></div>
    {/* Responsive Block */}
-   <div className="container-fluid bg-black text-white d-flex align-items-center justify-content-center p-0" style={{ height: '307px', margin: '0 -15px' }}>
-        <div className="row col-lg-6">
+   <div className="container-fluid bg-dark text-white d-flex align-items-center justify-content-center p-0" style={{ height: '307px', margin: '0px' }}>
+        <div className="row col-lg-6 flex-lg-column">
           <div className="d-flex flex-column justify-content-left p-4">
           <h2 className="text-center" style={{ fontSize: '15px', lineHeight: '1.5', marginBottom: '15px' }}>
             Data: 24 noiembrie 2023 - Locație: Venue, Timișoara</h2>
@@ -126,7 +113,7 @@ function Home () {
           </div>
          
         </div>
-        <div className="row col-lg-2"> 
+        <div className="row col-lg-6 flex-lg-column"> 
         <div className="col-lg-6 d-flex justify-content-center  p-2">
             <button className="btn custom-button">BILETE</button>
           </div>
@@ -136,7 +123,7 @@ function Home () {
 
               {/* New Section */}
       <div className="container-fluid bg-white text-black d-flex align-items-center justify-content-center p-0" style={{ height: '307px', margin: '0 -15px' }}>
-        <div className="row">
+        <div className="row ">
           <div className="col-lg-12 d-flex flex-column justify-content-center p-4">
             <h2 className="text-center" style={{ fontFamily: 'montserrat', fontSize: '24px', marginBottom: '15px' }}>
               ABONAȚI-VĂ LA NEWSLETTER

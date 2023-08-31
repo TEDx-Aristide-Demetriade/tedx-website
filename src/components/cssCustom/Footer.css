@@ -1,0 +1,27 @@
+/* Footer Styles */
+
+  
+  .footer-link {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-link:hover {
+    color: #fff;
+  }
+  
+  .social-icons {
+    font-size: 24px;
+  }
+  
+  .social-icon {
+    color: #999;
+    margin: 0 8px;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #fff;
+  }
+  
