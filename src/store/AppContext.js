@@ -7,7 +7,7 @@ const initialProducts = [
     speaker: "John Snow",
     speechTitle: "How to be more confidence",
     date: "20-08-2023",
-    price: "150",
+    price: "450",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
