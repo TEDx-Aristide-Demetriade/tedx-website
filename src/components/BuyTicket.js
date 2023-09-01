@@ -43,9 +43,9 @@ const BuyTicket = () => {
     <div className="ticket-wrapper container">
       <Ticket
         event="Event"
-        description="Descriere"
-        date="20.09.2023"
-        price={100}
+        description="Bilet Tedx"
+        date="24.11.2023"
+        price={450}
       />
       <div className="ticket-action">
         <div className="w-100">
