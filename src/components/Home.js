@@ -37,7 +37,7 @@ function Home () {
       
     
       {/* Big Title */}
-      <div className="row d-flex justify-content-center justify-content-md-start justify-content-lg-end">
+      <div className="row d-flex justify-content-center justify-content-md-start justify-content-lg-end mt-4">
   <div className="col text-center col-md-6 text-md-start">
     <h2>TEDxARISTIDE DEMETRIADE</h2>
   </div>
@@ -69,7 +69,7 @@ function Home () {
             className="img-fluid"
           />
         </div>
-        <div className="col-md-6 col-md-6 d-flex flex-column justify-content-center">
+        <div className="col-md-6 col-md-6 d-flex flex-column justify-content-center mt-2">
           {/* Right content */}
           <div>
           <h3>Tema evenimentului</h3>
@@ -85,7 +85,7 @@ function Home () {
           Ne reîntoarcem la noi înșine. Redescoperim diferitele forme ale autenticității. Creionăm un puzzle al oamenilor care îndrăznesc să viseze măreț.
           </p>
           <p style={{ fontFamily: "Body P" }}>
-          Vom învăța de la cei 12 vorbitori, cum în momente de criză putem să reaprindem flacăra din interiorul nostru, pentru a reuși în viață
+          Vom învăța de la cei 12 vorbitori, cum în momente de criză putem să reaprindem flacăra din interiorul nostru, pentru a reuși în viață.
         
           </p>
           <p style={{ fontFamily: "Body P" }}>
@@ -106,7 +106,9 @@ function Home () {
         <div className="row col-lg-6 flex-lg-column">
           <div className="d-flex flex-column justify-content-left p-4">
           <h2 className="text-center" style={{ fontSize: '15px', lineHeight: '1.5', marginBottom: '15px' }}>
-            Data: 24 noiembrie 2023 - Locație: Venue, Timișoara</h2>
+            Data: 24 noiembrie 2023</h2>
+            <h2 className="text-center" style={{ fontSize: '15px', lineHeight: '1.5', marginBottom: '15px' }}>
+            Locație: Venue, Timișoara</h2>
             <h2 className="text-center" style={{ fontSize: '25px', lineHeight: '1.5', marginBottom: '15px' }}>
               COUNTER TILL TEDxARISTIDE DEMETRIADE Event
             </h2>

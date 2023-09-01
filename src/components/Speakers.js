@@ -9,8 +9,8 @@ function Speakers() {
         {/* Left Column - Speaker 1 */}
         <div className="col-md-6 speaker-info">
           <div className="text-center mb-4">
-            <h4>STORYTELLING</h4>
-            <h1 className="firestarter-title">Firestarter</h1>
+            <h4>Firestarter</h4>
+            <h1 className="firestarter-title">STORYTELLING</h1>
             <p className="speaker-name">Giorgiana Popan</p>
           </div>
         </div>

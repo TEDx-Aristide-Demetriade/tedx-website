@@ -31,7 +31,7 @@ function About () {
             <div className="mb-4">
             
               <p>
-              Într-o zi de vara, la începutul lunii mai, munca noastră a început să prindă contur. A fost o explozie de fericire. Am sărit atât de tare încât am pierdut cheia de la apartament. 
+              Într-o zi de vară, la începutul lunii mai, munca noastră a început să prindă contur. A fost o explozie de fericire. Am sărit atât de tare încât am pierdut cheia de la apartament. 
               </p>
             </div>
             <div className="mb-4">
@@ -47,7 +47,7 @@ function About () {
             </div>
             <div>
                 <p>
-                Oh, vom susține vorbitori ale căror idei ne ofera solutii în perioade de criză.
+                Oh, vom susține vorbitori ale căror idei ne oferă soluții în perioade de criză.
                  Sunt oameni care ne învață cum să reaprindem flacăra interioară în momente dificile, pentru a produce o schimbare benefică lumii în care trăim.              </p>
             </div>
             <div>

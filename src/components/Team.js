@@ -19,6 +19,8 @@ function Team() {
   const [currentPage, setCurrentPage] = useState(1);
   const photosPerPage = 8;
   const photos = allPhotos; // Array of all photo paths
+  const trainerPhotos = [trainer1, trainer2, trainer3, trainer4, trainer5];
+
 
   const [selectedPhoto, setSelectedPhoto] = useState(photos[0]); // Set the first photo as active initially
   
@@ -145,19 +147,25 @@ function Team() {
 
   const handlePhotoClick = (photoUrl, index) => {
     setSelectedPhoto(photoUrl);
+   
+            setSelectedHeader(photoDetails[index].header);
+      setSelectedParagraph(photoDetails[index].paragraph);
+       
+
     const actualIndex = (currentPage - 1) * photosPerPage + index;
 
   // Get the corresponding header and paragraph from photoDetails array
   const selectedDetails = photoDetails[actualIndex];
     setSelectedHeader(selectedDetails.header);
     setSelectedParagraph(selectedDetails.paragraph);
+  
   };
   return (
     <div>
       <div className="container .container-team py-5 py-5-team">
         <div className="row">
           <div className="col text-center text-center-team ">
-            <h1>Echipa FIRESTARTERS</h1>
+            <h1>Board FIRESTARTERS</h1>
             <p>
          
             </p>
@@ -215,16 +223,16 @@ function Team() {
           <p></p>
         </div>
         <div className="row">
-      {photos.slice((currentPage - 1) * photosPerPage, currentPage * photosPerPage).map((photo, index) => (
-        <div className={`col-md-3  text-center text-center-team  ${selectedPhoto === photo? 'active-team' : ''}`} key={index}>
-          <img
-            src={photo}
-            alt={`Photo ${index + 1}`}
-            className="img-fluid standard-image-team"
-            onClick={() => handlePhotoClick(photo, index)}
-          />
-        </div>
-      ))}
+        {photos.slice((currentPage - 1) * photosPerPage, currentPage * photosPerPage).map((photo, index) => (
+  <div className={`col-md-3 text-center text-center-team ${selectedPhoto === photo ? 'active-team' : ''}`} key={index}>
+    <img
+      src={photo}
+      alt={`Photo ${index + 1}`}
+      className="img-fluid standard-image-team"
+      onClick={() => handlePhotoClick(photo, index)}
+    />
+  </div>
+))}
     </div>
           {/* Pagination buttons */}
   <div className="pagination-team">

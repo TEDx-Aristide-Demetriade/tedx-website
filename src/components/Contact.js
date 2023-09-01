@@ -6,10 +6,10 @@ function Contact() {
       <div className="row">
         {/* First Column - Contact Form */}
         <div className="col-lg-6">
-          <h1>Contacteaza-ne!</h1>
+          <h1>Contactează-ne!</h1>
           <form>
             <div className="mb-3">
-              <label htmlFor="name" className="form-label">Nume si Prenume</label>
+              <label htmlFor="name" className="form-label">Nume și Prenume</label>
               <input type="text" className="form-control" id="name" />
             </div>
             <div className="mb-3">
@@ -26,7 +26,7 @@ function Contact() {
 
         {/* Second Column - Google Map */}
         <div className="col-lg-6">
-          <h1>Gaseste-ne pe harta!</h1>
+          <h1>Găsește-ne pe hartă!</h1>
           <div className="map-responsive">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8599.210217437778!2d21.224087680097824!3d45.7526283515241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455d7f9451df5f%3A0x7af51fdc3b64a724!2sCentru%20Timisoara!5e0!3m2!1sro!2sro!4v1693520552311!5m2!1sro!2sro"

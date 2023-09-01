@@ -64,9 +64,9 @@ const Footer = () => {
           </div>
           <div className="col text-center py-3">
             <div className="social-icons">
-              <a href="#" className="social-icon"><FaFacebook /></a>
-              <a href="#" className="social-icon"><FaInstagram /></a>
-              <a href="#" className="social-icon"><FaLinkedin /></a>
+              <a href="https://www.facebook.com/people/TEDxAristide-Demetriade/100093140688753/" className="social-icon"><FaFacebook /></a>
+              <a href="https://www.instagram.com/tedxaristidedemetriade/" className="social-icon"><FaInstagram /></a>
+              <a href="https://ro.linkedin.com/company/tedxaristide-demetriade" className="social-icon"><FaLinkedin /></a>
             </div>
           </div>
         </div>
