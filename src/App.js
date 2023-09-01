@@ -14,6 +14,7 @@ import { AppContext } from "./store/AppContext";
 import { Registration } from "./components/admin/AdminAuth";
 import BuyTicket from "./components/BuyTicket";
 import { setAuthHeaderInstance } from "./api/instance";
+import ThankYouPage from "./components/ThankYouPage";
 
 function App() {
   const { authToken } = useContext(AppContext);
@@ -37,6 +38,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/buy-ticket" element={<BuyTicket />} />
+          <Route path="/thankyou" element={<ThankYouPage />} />
         </Routes>
         <Registration />
       </main>

@@ -75,6 +75,7 @@ function Navigation() {
                 Echipa
               </Link>
             </li>
+           
             <li
               className={`nav-item ${
                 location.pathname === "/sponsors" ? "active" : ""
