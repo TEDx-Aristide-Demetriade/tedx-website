@@ -113,6 +113,17 @@ function Team() {
       paragraph: 'Fotograf Lead',
     },
     {
+      header: 'Mădălina Udrea',
+      paragraph: 'Frontend Developer',
+      
+    },
+    {
+      header: 'Alexandru Hanțari',
+      
+      paragraph: 'Backend Developer',
+    },
+      
+    {
       header: 'George Olteanu',
       paragraph: 'Fotograf',
     },
@@ -152,17 +163,6 @@ function Team() {
       paragraph: 'Moderator',
     },
     
-    {
-      header: 'Alexandru Hanțari',
-      
-      paragraph: 'Backend Developer',
-    },
-    
-    {
-      header: 'Mădălina Udrea',
-      paragraph: 'Frontend Developer',
-      
-    },
     {
       header: 'Andrada Roman',
       paragraph: 'Project Manager',
@@ -258,7 +258,7 @@ function Team() {
           <div className="col-md-2 d-flex justify-content-center">
           </div>
         </div>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center mt-4">
           <div className="col-md-2 d-flex justify-content-center">
           <div className={`text-center text-center-team ${selectedPhotoBoardm === boardmPhotos[1] ? 'active-team' : ''}`}>
     <img

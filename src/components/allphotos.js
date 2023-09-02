@@ -14,6 +14,8 @@ const allPhotos = [
     require('./resources/echipa/traineri/Vlad Matica.jpeg'),
     require('./resources/echipa/foto/Petru.jpg'),
     require('./resources/echipa/foto/Simina-modified.jpg'),
+    require('./resources/echipa/web/Madalin Udrea.jpg'),
+    require('./resources/echipa/web/Alexandru Hintari.jpg'), 
     require('./resources/echipa/foto/george.jpg'),
     require('./resources/echipa/foto/kristian.jpg'),
     require('./resources/echipa/marketing/Alexandru Draghici.jpeg'),
@@ -23,8 +25,6 @@ const allPhotos = [
     require('./resources/echipa/moderatori/Ovidiu Grecu.jpeg'),
     require('./resources/echipa/moderatori/Roxana Ciobotea.jpeg'),
     require('./resources/echipa/moderatori/Sergiu Foca.jpeg'),   
-    require('./resources/echipa/web/Alexandru Hintari.jpg'),
-    require('./resources/echipa/web/Madalin Udrea.jpg'),
     require('./resources/echipa/projetManager/Andrada Roman.jpeg'),
     require('./resources/echipa/projetManager/Melania Stanaia.jpeg'),
     
