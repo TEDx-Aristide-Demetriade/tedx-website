@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './cssCustom/customStyles.css';
 import videoSource from './resources/videos/Firestarters.mp4';
 import imagine1 from './resources/pictures/image00003.jpeg';
-import coverImage from './resources/pictures/poza profil.png'; // Replace with the actual path to your cover image
+import coverImage from './resources/pictures/poza_profil.png'; // Replace with the actual path to your cover image
 
 
 
