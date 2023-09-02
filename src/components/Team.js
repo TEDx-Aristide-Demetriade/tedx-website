@@ -113,7 +113,7 @@ function Team() {
       paragraph: 'Fotograf Lead',
     },
     {
-      header: 'Mădălina Udrea',
+      header: 'Mădălin Udrea',
       paragraph: 'Frontend Developer',
       
     },
