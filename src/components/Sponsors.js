@@ -34,7 +34,7 @@ function Sponsors() {
         <div className="row justify-content-center">
           <div className="col-md-2 text-center">
             <img src={image4} alt="Sponsor" className="img-fluid mb-3" />
-            <h3>Renderistic</h3>
+            <h3 style={{color: 'limegreen' }}>Renderistic</h3>
           </div>
         </div>
         {/* ... Add more rows and images as needed */}

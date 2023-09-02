@@ -71,24 +71,29 @@ function About () {
      
        
     {/* Responsive Block */}
-    {/* Responsive Block */}
-    <div className="container-fluid bg-black text-white d-flex align-items-center justify-content-center p-0" style={{ height: '307px', margin: '0 -15px' }}>
-        <div className="row col-lg-6">
-          <div className="d-flex flex-column justify-content-left p-4">
-          <h2 className="text-center" style={{ fontSize: '15px', lineHeight: '1.5', marginBottom: '15px' }}>
-            Data: 24 noiembrie 2023 - Locație: Venue, Timișoara</h2>
-            <h2 className="text-center" style={{ fontSize: '25px', lineHeight: '1.5', marginBottom: '15px' }}>
-              COUNTER TILL TEDxARISTIDE DEMETRIADE Event
-            </h2>
-          </div>
-         
+    <div className="bg-dark text-white py-4">
+  <div className="container">
+    <div className="row">
+      <div className="col-md-12 col-lg-6 mb-4">
+        <div className="d-flex flex-column justify-content-left p-4">
+          <h2 className="text-center mb-3" style={{ fontSize: '1.0rem' }}>
+            Data: 24 noiembrie 2023
+          </h2>
+          <h2 className="text-center mb-3" style={{ fontSize: '1.0rem' }}>
+            Locație: Venue, Timișoara
+          </h2>
+          <h2 className="text-center" style={{ fontSize: '1.3rem'}}>
+            COUNTER TILL TEDxARISTIDE DEMETRIADE Event
+          </h2>
         </div>
-        <div className="row col-lg-2"> 
-        <div className="col-lg-6 d-flex justify-content-center  p-2">
-            <button className="btn custom-button">BILETE</button>
-          </div>
       </div>
+      <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
+        <button className="btn custom-button">BILETE</button>
       </div>
+    </div>
+  </div>
+</div>
+
       {/* White Space */}
      <div style={{ height: '100px' }}></div>
       
