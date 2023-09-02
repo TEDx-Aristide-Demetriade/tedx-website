@@ -130,7 +130,9 @@ function About () {
         </div>
       </div>
       <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
-        <button className="btn custom-button">BILETE</button>
+      <a href="https://forms.gle/6LjW2bPviRRWo4J38" target="_blank" rel="noopener noreferrer">
+    <button className="btn custom-button">BILETE</button>
+  </a>
       </div>
     </div>
   </div>

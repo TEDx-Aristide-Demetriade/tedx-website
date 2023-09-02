@@ -28,7 +28,7 @@ const Footer = () => {
     <p><a className="links-color" href="/team">Echipa</a></p>
             </div>
             <div className="col-4">
-            <p><a  className="links-color" href="/buy-ticket">Bilete</a></p>
+            <p><a  className="links-color" href="https://forms.gle/6LjW2bPviRRWo4J38">Bilete</a></p>
     <p><a className="links-color" href="/sponsors">Sponsori</a></p>
     <p><a className="links-color" href="/contact">Contact</a></p>
             </div>

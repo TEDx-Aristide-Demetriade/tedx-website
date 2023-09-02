@@ -94,57 +94,15 @@ function Navigation() {
                 Contact
               </Link>
             </li>
-            {isLoggedIn ? (
-              <>
-                <li
-                  className={`nav-item ${
-                    location.pathname === "/admin" ? "active" : ""
-                  }`}
-                >
-                  <button
-                    onClick={handleClickAdminPanel}
-                    className="nav-link w-100 d-flex"
-                  >
-                    Admin
-                  </button>
-                </li>
-                <li
-                  className={`nav-item ${
-                    location.pathname === "/admin" ? "active" : ""
-                  }`}
-                >
-                  {" "}
-                  <button
-                    onClick={handleClickLogout}
-                    className="nav-link w-20 d-flex"
-                    style={{ color: "white" }}
-                  >
-                    Logout
-                  </button>
-                </li>
-              </>
-            ) : (
-              <li
-                className={`nav-item ${
-                  location.pathname === "/admin" ? "active" : ""
-                }`}
-              >
-                <button
-                  onClick={handleClickAdminPanel}
-                  className="nav-link w-100 d-flex"
-                >
-                  Admin
-                </button>
-              </li>
-            )}
+           
             <li
               className={`nav-item ${
-                location.pathname === "/buy-ticket" ? "active" : ""
+                location.pathname === "https://forms.gle/6LjW2bPviRRWo4J38" ? "active" : ""
               }`}
             >
               <Link
                 className="nav-link btn custom-button "
-                to="/buy-ticket"
+                to="https://forms.gle/6LjW2bPviRRWo4J38"
                 style={{ visibility: isLoggedIn ? "hidden" : "visible" }}
               >
                 BILETE
