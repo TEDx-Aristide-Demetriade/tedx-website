@@ -2,7 +2,7 @@ import React from 'react';
 import image1 from './resources/logoCompanii/Flex Logo, Blue.png';  
 import image2 from './resources/logoCompanii/Webamboos_Logomark_Color.png';  
 import image3 from './resources/logoCompanii/Network3.0.png';
-import image4 from './resources/logoCompanii/renderistic logo.png'
+import image4 from './resources/logoCompanii/renderistic.jpeg'
 
 function Sponsors() {
   return (
@@ -34,7 +34,7 @@ function Sponsors() {
         <div className="row justify-content-center">
           <div className="col-md-2 text-center">
             <img src={image4} alt="Sponsor" className="img-fluid mb-3" />
-            <h3 style={{color: 'limegreen' }}>Renderistic</h3>
+           
           </div>
         </div>
         {/* ... Add more rows and images as needed */}
