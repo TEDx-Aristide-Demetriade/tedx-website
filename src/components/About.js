@@ -117,7 +117,7 @@ function About () {
             Locație: Venue, Timișoara
           </h2>
           <h2 className="text-center" style={{ fontSize: '1.3rem' }}>
-        COUNTER TILL TEDxARISTIDE DEMETRIADE Event
+        TEDxARISTIDE DEMETRIADE
       </h2>
       <div className="text-center">
         <div>

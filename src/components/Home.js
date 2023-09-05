@@ -1,5 +1,5 @@
 // src/components/Home.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './cssCustom/customStyles.css';
@@ -11,6 +11,41 @@ import coverImage from './resources/pictures/poza_profil.png'; // Replace with t
 
 
 function Home () {
+
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+  const eventDate = new Date('2023-11-24T00:00:00Z').getTime();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const currentDate = new Date().getTime();
+      const timeRemaining = eventDate - currentDate;
+
+      if (timeRemaining <= 0) {
+        // Event has already occurred, you can handle this case
+        clearInterval(interval);
+      } else {
+        const daysRemaining = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hoursRemaining = Math.floor(
+          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutesRemaining = Math.floor(
+          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const secondsRemaining = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        setDays(daysRemaining);
+        setHours(hoursRemaining);
+        setMinutes(minutesRemaining);
+        setSeconds(secondsRemaining);
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     
     <div>
@@ -113,8 +148,8 @@ function Home () {
 
      {/* White Space */}
      <div style={{ height: '50px' }}></div>
-   {/* Responsive Block */}
-   <div className="bg-dark text-white py-4">
+    {/* Responsive Block */}
+    <div className="bg-dark text-white py-4">
   <div className="container">
     <div className="row">
       <div className="col-md-12 col-lg-6 mb-4">
@@ -125,16 +160,24 @@ function Home () {
           <h2 className="text-center mb-3" style={{ fontSize: '1.0rem' }}>
             Locație: Venue, Timișoara
           </h2>
-          <h2 className="text-center" style={{ fontSize: '1.3rem'}}>
-            COUNTER TILL TEDxARISTIDE DEMETRIADE Event
-          </h2>
+          <h2 className="text-center" style={{ fontSize: '1.3rem' }}>
+        TEDxARISTIDE DEMETRIADE
+      </h2>
+      <div className="text-center">
+        <div>
+          <span>{days}</span> zile{' '}
+          <span>{hours}</span> ore{' '}
+          <span>{minutes}</span> minute{' '}
+          <span>{seconds}</span> secunde
+        </div>
+      </div>
         </div>
       </div>
       <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
-  <a href="https://forms.gle/6LjW2bPviRRWo4J38" target="_blank" rel="noopener noreferrer">
+      <a href="https://forms.gle/6LjW2bPviRRWo4J38" target="_blank" rel="noopener noreferrer">
     <button className="btn custom-button">BILETE</button>
   </a>
-</div>
+      </div>
     </div>
   </div>
 </div>
