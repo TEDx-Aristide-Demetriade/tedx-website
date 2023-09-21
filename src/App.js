@@ -16,6 +16,7 @@ import BuyTicket from "./components/BuyTicket";
 import { setAuthHeaderInstance } from "./api/instance";
 import ThankYouPage from "./components/ThankYouPage";
 
+
 function App() {
   const { authToken } = useContext(AppContext);
 

@@ -20,7 +20,6 @@ const allPhotos = [
     require('./resources/echipa/foto/kristian.jpg'),
     require('./resources/echipa/marketing/Alexandru Draghici.jpeg'),
     require('./resources/echipa/marketing/Cristina Danilet Copywriting.jpg'),
-    require('./resources/echipa/marketing/Luana Mija.jpeg'),
     require('./resources/echipa/marketing/Pereanu Paul.jpeg'),
     require('./resources/echipa/moderatori/Ovidiu Grecu.jpeg'),
     require('./resources/echipa/moderatori/Roxana Ciobotea.jpeg'),

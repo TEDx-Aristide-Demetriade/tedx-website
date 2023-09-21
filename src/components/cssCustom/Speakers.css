@@ -37,3 +37,28 @@
 .centered-text-speakers {
   text-align: center;
 }
+
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagination-buttons button {
+  background-color: #ff2b06;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination-buttons button:hover {
+  background-color: #e02400; /* a slightly darker shade for hover effect */
+}
+
+.pagination-buttons button:disabled {
+  background-color: #d1d1d1; /* grey out the button when disabled */
+  cursor: not-allowed;
+}

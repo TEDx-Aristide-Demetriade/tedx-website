@@ -213,36 +213,18 @@ function Speakers() {
           </React.Fragment>
         ))}
   
-        {/* Pagination controls */}
-    <div className="pagination-buttons row mt-5">
-      <div className="col text-center">
-        <button
-          className="btn btn-primary mr-2"
-          disabled={currentPage === 1}
-          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-        >
-          &lt; 
-        </button>
-        {Array.from({ length: totalPages }).map((_, idx) => (
-          <button
-            key={idx}
-            className={`btn btn-${idx + 1 === currentPage ? 'primary' : 'secondary'} mx-1`}
-            onClick={() => setCurrentPage(idx + 1)}
-          >
-            {idx + 1}
-          </button>
-        ))}
-        <button
-          className="btn btn-primary ml-2"
-          disabled={currentPage === totalPages}
-          onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
-        >
-         
-         &gt; 
-        </button>
+        <div className="d-flex justify-content-center">
+          {Array.from({ length: totalPages }).map((_, index) => (
+            <button
+              key={index}
+              className={`page-button ${index + 1 === currentPage ? 'active' : ''}`}
+              onClick={() => setCurrentPage(index + 1)}
+            >
+              {index + 1}
+            </button>
+          ))}
+        </div>
       </div>
-    </div>
-  </div>
     );
   }
   

@@ -141,11 +141,7 @@ function Team() {
       paragraph: 'Copywriting',
     }, 
      
-    {
-      header: 'Luana Munteanu',
-      paragraph: 'Grafic Designer',
-    },
-   
+    
     {
       header: 'Paul Pereanu',
       paragraph: 'Specialist Reels',

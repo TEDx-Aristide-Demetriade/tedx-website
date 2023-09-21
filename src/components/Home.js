@@ -171,15 +171,16 @@ function Home () {
           <span>{seconds}</span> secunde
         </div>
       </div>
-      <h2 className="text-center mt-3" style={{ fontSize: '1.0rem' }}>
-            BILETE = 1 x 90 euro (450 ron) - include coffee break, pranzul, participare la conferință, dialog cu vorbitorii și networking.
-          </h2>
+     
         </div>
       </div>
-      <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
+      <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center" style={{flexDirection: "column" }}>
       <a href="https://forms.gle/6LjW2bPviRRWo4J38" target="_blank" rel="noopener noreferrer">
     <button className="btn custom-button">BILETE</button>
   </a>
+  <h2 className="text-center mt-3" style={{ fontSize: '1.0rem' }}>
+           1 x 90 euro (450 ron) - include coffee break, pranzul, participare la conferință, dialog cu vorbitorii și networking.
+          </h2>
       </div>
     </div>
   </div>
