@@ -57,7 +57,7 @@ function Speakers() {
         link: 'http://www.upt.ro/Informatii_confunivdring-florin-dragan---rector_1423_ro.html',
       },
       {
-        title: 'Leadership Organizational',
+        title: 'Leadership Organizațional',
         name: 'Chris Roy Turner',
         fistName: 'Chris',
         image: speaker6,
@@ -67,7 +67,7 @@ function Speakers() {
         link: 'https://www.linkedin.com/in/chrisroyturner',
       },
       {
-        title: 'INTELIGENTA EMOTIONALA',
+        title: 'INTELIGENȚĂ EMOȚIONALĂ',
         name: 'Zoltan Veres',
         fistName: 'Zoltan',
         image: speaker7,
@@ -79,7 +79,7 @@ function Speakers() {
       {
         title: 'NEWPHARMA',
         name: 'Răzvan Vlasin',
-        fistName: 'Razvan',
+        fistName: 'Răzvan',
         image: speaker8,
         about: 'despre',
         splits: [1,3],
@@ -87,7 +87,7 @@ function Speakers() {
         link:'https://www.linkedin.com/in/razvanvlasin',
       },
       {
-        title: 'INGINERIE NAVALA',
+        title: 'INGINERIE NAVALĂ',
         name: 'Eden Alimsait',
         fistName: 'Eden',
         image: speaker9,
@@ -97,8 +97,8 @@ function Speakers() {
         link:'https://www.linkedin.com/in/eden-alimsait-9726b222a/',
       },
       {
-        title: 'STIINTE SOCIALE',
-        name: 'Silvia Fierascu',
+        title: 'ȘTIINȚE SOCIALE',
+        name: 'Silvia Fierăscu',
         fistName: 'Silvia',
         image: speaker10,
         about: 'despre',
