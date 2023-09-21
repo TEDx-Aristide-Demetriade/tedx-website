@@ -28,3 +28,12 @@
     transform: scale(1.05); /* Enlarge the image on hover */
   }
   
+
+  .justified-speakers {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.centered-text-speakers {
+  text-align: center;
+}
