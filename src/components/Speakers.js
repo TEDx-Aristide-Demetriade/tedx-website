@@ -46,16 +46,7 @@ function Speakers() {
         description: 'Elementele care fac diferența în societatea contemporană ne trezesc întrebări despre viitor. Elena Ifrim este inginer IT în domeniul cercetării și inovării în sănătate. Parcursul acesteia a început la București, urmând să-și continue studiile masterale la Strasburg. Printre domeniile studiate, Elena a îmbinat etica, bioetica și inteligența artificială. Prin pasiunea și devotamentul ei ne invită să reflectăm asupra relației om - robot, întrucât aceștia nu reprezintă o amenințare, ci un instrument de îmbunătățire a condiției umane.',
         link: 'https://www.linkedin.com/in/elena-ifrim/',
       },
-      {
-        title: 'EDUCAȚIE',
-        name: 'Florin Drăgan',
-        fistName: 'Florin',
-        image: speaker5,
-        about: 'despre',
-        splits: [2,4],
-        description: 'Viteza în care trăim are un ritm amețitor. Prietenul, colegul sau simplul trecător pe stradă trăiesc experiențe diametral opuse în 24 de ore, ce le pot schimba viața. Totuși, ei și noi, tu și eu, avem un punct comun: EDUCAȚIA. Florin Drăgan este Rector al Universității Politehnica Timișoara. Ideea sa relevă impactul tehnologiei care produce o schimbare pozitivă în mentalitatea educatorilor, pentru a ghida generațiile viitoare. Da, tehnologia face parte din viețile noastre. Integrarea sa în sistemul de educație este un prim pas spre conectarea directă cu viitorul.',
-        link: 'http://www.upt.ro/Informatii_confunivdring-florin-dragan---rector_1423_ro.html',
-      },
+     
       {
         title: 'Leadership Organizațional',
         name: 'Chris Roy Turner',
@@ -77,6 +68,16 @@ function Speakers() {
         link: 'https://www.linkedin.com/in/zoltan-veres',
       },
       {
+        title: 'ȘTIINȚE SOCIALE',
+        name: 'Silvia Fierăscu',
+        fistName: 'Silvia',
+        image: speaker10,
+        about: 'despre',
+        splits: [1,3],
+        description: 'Relațiile sociale sunt conexiunile care au un impact semnificativ asupra universului nostru mental, emoțional și fizic. Ele ne oferă oportunități de creștere și dezvoltare personală. Silvia Fierăscu este cercetător în științe sociale. Ea transpune problemele complexe în soluții pentru dezvoltarea organizațională, buna guvernare și reziliența societății civile. Discursul ei ne va prezenta cum se transformă o rețea inactivă de oameni într-una activă şi cu impact în comunitate, folosind tehnici de mapping.',
+        link:'https://www.linkedin.com/in/silviafierascu',
+      },
+      {
         title: 'NEWPHARMA',
         name: 'Răzvan Vlasin',
         fistName: 'Răzvan',
@@ -96,15 +97,16 @@ function Speakers() {
         description: 'Oh, marea, este un mister continuu. Ne inspiră să visăm și să ne dorim mai mult. Marea este neantul care ne aduce întotdeauna la liman, după o furtună. Eden Alimsait este specialist în inginerie navală. De-a lungul carierei sale a descoperit frumusețea mării, în calitate de mecanic pe vapoare de mare tonaj. Ne va inspira cu ideea sa de a transforma apa de mare în apă potabilă, prin tehnici specifice ingineriei navale. El susține că acest procedeu poate fi aplicat inclusiv în satele din România, care suferă de lipsa apei potabile.',
         link:'https://www.linkedin.com/in/eden-alimsait-9726b222a/',
       },
+      
       {
-        title: 'ȘTIINȚE SOCIALE',
-        name: 'Silvia Fierăscu',
-        fistName: 'Silvia',
-        image: speaker10,
+        title: 'EDUCAȚIE',
+        name: 'Florin Drăgan',
+        fistName: 'Florin',
+        image: speaker5,
         about: 'despre',
-        splits: [1,3],
-        description: 'Relațiile sociale sunt conexiunile care au un impact semnificativ asupra universului nostru mental, emoțional și fizic. Ele ne oferă oportunități de creștere și dezvoltare personală. Silvia Fierăscu este cercetător în științe sociale. Ea transpune problemele complexe în soluții pentru dezvoltarea organizațională, buna guvernare și reziliența societății civile. Discursul ei ne va prezenta cum se transformă o rețea inactivă de oameni într-una activă şi cu impact în comunitate, folosind tehnici de mapping.',
-        link:'https://www.linkedin.com/in/silviafierascu',
+        splits: [2,4],
+        description: 'Viteza în care trăim are un ritm amețitor. Prietenul, colegul sau simplul trecător pe stradă trăiesc experiențe diametral opuse în 24 de ore, ce le pot schimba viața. Totuși, ei și noi, tu și eu, avem un punct comun: EDUCAȚIA. Florin Drăgan este Rector al Universității Politehnica Timișoara. Ideea sa relevă impactul tehnologiei care produce o schimbare pozitivă în mentalitatea educatorilor, pentru a ghida generațiile viitoare. Da, tehnologia face parte din viețile noastre. Integrarea sa în sistemul de educație este un prim pas spre conectarea directă cu viitorul.',
+        link: 'http://www.upt.ro/Informatii_confunivdring-florin-dragan---rector_1423_ro.html',
       },
       // Add more speaker objects for all your speakers.
     ];
