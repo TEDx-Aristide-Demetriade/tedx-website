@@ -26,6 +26,8 @@ const allPhotos = [
     require('./resources/echipa/moderatori/Sergiu Foca.jpeg'),   
     require('./resources/echipa/projetManager/Andrada Roman.jpeg'),
     require('./resources/echipa/projetManager/Melania Stanaia.jpeg'),
+    require('./resources/echipa/foto/Bogdan Potra - Tehnician Sunet.jpeg'),
+    require('./resources/echipa/foto/val-band.jpeg'),
     
 
  

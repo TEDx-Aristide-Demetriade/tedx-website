@@ -167,6 +167,14 @@ function Team() {
       header: 'Melania Stanaia',
       paragraph: 'Project Manager',
     },
+    {
+      header: 'Bogdan Potra',
+      paragraph: 'Tehnician Sunet',
+    },
+    {
+      header: 'Val Band',
+      paragraph: 'Trupa de muzica',
+    },
 
     
     // ... Add entries for other photos

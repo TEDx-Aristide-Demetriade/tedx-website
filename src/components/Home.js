@@ -179,7 +179,7 @@ function Home () {
     <button className="btn custom-button">BILETE</button>
   </a>
   <h2 className="text-center mt-3" style={{ fontSize: '1.0rem' }}>
-           1 x 90 euro (450 ron) - include coffee break, pranzul, participare la conferință, dialog cu vorbitorii și networking.
+           1 x 90 euro (450 ron) - include coffee break, prânzul, participare la conferință, dialog cu vorbitorii și networking.
           </h2>
       </div>
     </div>
