@@ -173,7 +173,7 @@ function Team() {
     },
     {
       header: 'Val Band',
-      paragraph: 'Trupa de muzica',
+      paragraph: 'Band de muzică',
     },
 
     
