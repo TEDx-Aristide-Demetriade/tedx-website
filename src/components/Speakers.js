@@ -9,6 +9,7 @@ import speaker7 from './resources/vorbitori/Zoltan Veres INTELIGENTA EMOTIONALA.
 import speaker8 from './resources/vorbitori/Razvan Vlasin NEWPHARMA.jpeg';
 import speaker9 from './resources/vorbitori/Eden Alimsait INGINERIE  NAVALA.jpg';
 import speaker10 from './resources/vorbitori/Silvia Fierascu STIINTE SOCIALE.jpg';
+import speaker4 from './resources/vorbitori/Andreea_Grecu.jpeg';
 
 import './cssCustom/Speakers.css'; // Import your CSS file for styling
 function Speakers() {
@@ -48,7 +49,7 @@ function Speakers() {
       },
      
       {
-        title: 'Leadership Organizațional',
+        title: 'Organisational Leadership',
         name: 'Chris Roy Turner',
         fistName: 'Chris',
         image: speaker6,
@@ -97,7 +98,17 @@ function Speakers() {
         description: 'Oh, marea, este un mister continuu. Ne inspiră să visăm și să ne dorim mai mult. Marea este neantul care ne aduce întotdeauna la liman, după o furtună. Eden Alimsait este specialist în inginerie navală. De-a lungul carierei sale a descoperit frumusețea mării, în calitate de mecanic pe vapoare de mare tonaj. Ne va inspira cu ideea sa de a transforma apa de mare în apă potabilă, prin tehnici specifice ingineriei navale. El susține că acest procedeu poate fi aplicat inclusiv în satele din România, care suferă de lipsa apei potabile.',
         link:'https://www.linkedin.com/in/eden-alimsait-9726b222a/',
       },
-      
+      {
+        title: 'SELF LEADERSHIP',
+        name: 'Andreea Grecu',
+        fistName: 'Andreea',
+        image: speaker4,
+        about: 'despre',
+        splits: [1,3],
+        description: 'Trăim într-o lume în care suntem axați pe tehnologie și uităm de importanța conexiunii inter-umane. Relația cu noi înșine și arta de a fi prezenți au devenit doua elemente neglijate în societatea actuală. Andreea Grecu ne invită să povestim despre ceea ce înseamnă engagement într-o organizație. Ne aduce mai aproape de importanța conectării cu sinele și conștientizarea relațiilor pe care le creăm. Te așteptăm pe 24 Noiembrie să învățăm împreună despre complexitatea conexiunilor și despre importanța relațiilor pe care le construim.',
+        link: 'https://www.linkedin.com/in/andreea-grecu-0319089/',
+      },
+        
       {
         title: 'EDUCAȚIE',
         name: 'Florin Drăgan',
@@ -108,6 +119,7 @@ function Speakers() {
         description: 'Viteza în care trăim are un ritm amețitor. Prietenul, colegul sau simplul trecător pe stradă trăiesc experiențe diametral opuse în 24 de ore, ce le pot schimba viața. Totuși, ei și noi, tu și eu, avem un punct comun: EDUCAȚIA. Florin Drăgan este Rector al Universității Politehnica Timișoara. Ideea sa relevă impactul tehnologiei care produce o schimbare pozitivă în mentalitatea educatorilor, pentru a ghida generațiile viitoare. Da, tehnologia face parte din viețile noastre. Integrarea sa în sistemul de educație este un prim pas spre conectarea directă cu viitorul.',
         link: 'http://www.upt.ro/Informatii_confunivdring-florin-dragan---rector_1423_ro.html',
       },
+      
       // Add more speaker objects for all your speakers.
     ];
   

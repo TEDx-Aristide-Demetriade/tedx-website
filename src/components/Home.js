@@ -132,7 +132,7 @@ function Home () {
           Ne reîntoarcem la noi înșine. Redescoperim diferitele forme ale autenticității. Creionăm un puzzle al oamenilor care îndrăznesc să viseze măreț.
           </p>
           <p style={{ fontFamily: "Body P" }}>
-          Vom învăța de la cei 9 vorbitori, cum în momente de criză putem să reaprindem flacăra din interiorul nostru, pentru a reuși în viață.
+          Vom învăța de la cei 10 vorbitori, cum în momente de criză putem să reaprindem flacăra din interiorul nostru, pentru a reuși în viață.
         
           </p>
           <p style={{ fontFamily: "Body P" }}>
