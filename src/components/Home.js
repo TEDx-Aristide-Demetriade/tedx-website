@@ -11,7 +11,7 @@ import coverImage from './resources/pictures/poza_profil.png'; // Replace with t
 
 
 function Home () {
-
+  const isSoldOut = true;
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -174,14 +174,17 @@ function Home () {
      
         </div>
       </div>
-      <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center" style={{flexDirection: "column" }}>
-      <a href="https://forms.gle/6LjW2bPviRRWo4J38" target="_blank" rel="noopener noreferrer">
-    <button className="btn custom-button">BILETE</button>
+      <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center" style={{ flexDirection: "column" }}>
+  <a href={isSoldOut ? "#" : "https://forms.gle/6LjW2bPviRRWo4J38"} target="_blank" rel="noopener noreferrer" className={isSoldOut ? "disabled-link" : ""}>
+    <button className="btn custom-button">
+      {isSoldOut ? "SOLD OUT" : "BILETE"}
+    </button>
   </a>
   <h2 className="text-center mt-3" style={{ fontSize: '1.0rem' }}>
-           1 x 90 euro (450 ron) - include coffee break, prânzul, participare la conferință, dialog cu vorbitorii și networking.
-          </h2>
-      </div>
+    1 x 90 euro (450 ron) - include coffee break, prânzul, participare la conferință, dialog cu vorbitorii și networking.
+  </h2>
+</div>
+
     </div>
   </div>
 </div>

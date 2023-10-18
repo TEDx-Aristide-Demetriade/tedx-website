@@ -137,6 +137,11 @@
   justify-content: center;
 }
 
+.disabled-link {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import "~bootstrap-icons/font/bootstrap-icons.css";

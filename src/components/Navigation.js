@@ -7,6 +7,7 @@ import logo from './resources/pictures/logo-white.png';
 import "./cssCustom/Footer.css"
 
 function Navigation() {
+  const isSoldOut = true;
   const location = useLocation();
   const navigation = useNavigate();
   const { authToken, setOpenAdminPanel, setAuthToken } = useContext(AppContext);
@@ -96,20 +97,19 @@ function Navigation() {
             </li>
            
             <li
-              className={`nav-item ${
-                location.pathname === "https://forms.gle/6LjW2bPviRRWo4J38" ? "active" : ""
-              }`}
-            >
-              <Link
-                className="nav-link btn custom-button "
-                to="https://forms.gle/6LjW2bPviRRWo4J38"
-                style={{ visibility: isLoggedIn ? "hidden" : "visible" }}
-              >
-                BILETE
-              </Link>
-       
+  className={`nav-item ${
+    location.pathname === "https://forms.gle/6LjW2bPviRRWo4J38" ? "active" : ""
+  }`}
+>
+  <a
+    href="https://forms.gle/6LjW2bPviRRWo4J38"
+    className={`nav-link btn custom-button ${isSoldOut || isLoggedIn ? "disabled-link" : ""}`}
+    style={{ visibility: isLoggedIn ? "hidden" : "visible" }}
+  >
+    {isSoldOut ? "SOLD OUT" : "BILETE"}
+  </a>
+</li>
 
-            </li>
           </ul>
         </div>
       </div>
