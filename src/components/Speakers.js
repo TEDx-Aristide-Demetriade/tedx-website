@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import speaker1 from './resources/vorbitori/1 Georgiana PopanSTORYTELLING.jpg';
-import speaker2 from './resources/vorbitori/Nikoloz Kokhreidze CYBERSECURITY.jpg';
+import speaker2 from './resources/vorbitori/Nikoloz.jpeg';
 import speaker3 from './resources/vorbitori/Elena Ifrim ROBOTICA.jpeg';
 import speaker5 from './resources/vorbitori/Florin Dragan EDUCATIE.jpeg';
 import speaker6 from './resources/vorbitori/Chris Turner Leadership Organizational.jpg';

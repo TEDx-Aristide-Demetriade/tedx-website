@@ -8,6 +8,7 @@ import trainer3 from './resources/echipa/marketing/Lavinia Pop.jpeg';
 import trainer4 from './resources/echipa/marketing/Adriana Stamatin.jpeg';
 
 import trainer5 from './resources/echipa/web/Dragos Bacitea.jpg';
+import bandMuzica from './resources/echipa/foto/val-band.jpeg';
 import './cssCustom/team.css'; 
 
 import allPhotos from './allphotos';
@@ -141,11 +142,6 @@ function Team() {
       paragraph: 'Copywriting',
     }, 
      
-    
-    {
-      header: 'Paul Pereanu',
-      paragraph: 'Specialist Reels',
-    },
     {
       header: 'Ovidiu Grecu',
       paragraph: 'Moderator',
@@ -172,9 +168,10 @@ function Team() {
       paragraph: 'Tehnician Sunet',
     },
     {
-      header: 'Val Band',
-      paragraph: 'Band de muzică',
+      header: 'Ruben Ruben Petrovici',
+      paragraph: 'Tehnician Sunet',
     },
+
 
     
     // ... Add entries for other photos
@@ -390,6 +387,8 @@ function Team() {
       </div>
     </div>
 
+    
+
   {/* White Line */}
   <div className="container">
         <div className="row">
@@ -399,6 +398,31 @@ function Team() {
         </div>
       </div>
 
+      <div className="row mt-4 align-items-center mb-3">
+      <div className="col-md-6 text-center text-md-start px-md-5">
+          <p className="lead text-center">
+            VAL Band vor susține un recital în memoria Tinei Turner.
+          </p>
+        </div>
+        <div className="col-md-6">
+          <img
+            src={bandMuzica}
+            alt="VAL Band"
+            className="img-fluid rounded"
+            style={{ maxWidth: '100%', height: 'auto' }}
+          />
+        </div>
+      </div>
+
+   
+    {/* White Line */}
+  <div className="container">
+        <div className="row mt-5">
+          <div className="col">
+            <hr style={{ backgroundColor: 'white', height: '20px' }} />
+          </div>
+        </div>
+      </div>
 
        {/* Additional Container */}
        <div className="container .container-team py-5 py-5-team">

@@ -20,14 +20,13 @@ const allPhotos = [
     require('./resources/echipa/foto/kristian.jpg'),
     require('./resources/echipa/marketing/Alexandru Draghici.jpeg'),
     require('./resources/echipa/marketing/Cristina Danilet Copywriting.jpg'),
-    require('./resources/echipa/marketing/Pereanu Paul.jpeg'),
     require('./resources/echipa/moderatori/Ovidiu Grecu.jpeg'),
     require('./resources/echipa/moderatori/Roxana Ciobotea.jpeg'),
     require('./resources/echipa/moderatori/Sergiu Foca.jpeg'),   
     require('./resources/echipa/projetManager/Andrada Roman.jpeg'),
     require('./resources/echipa/projetManager/Melania Stanaia.jpeg'),
     require('./resources/echipa/foto/Bogdan Potra - Tehnician Sunet.jpeg'),
-    require('./resources/echipa/foto/val-band.jpeg'),
+    require('./resources/echipa/foto/Ruben Petrovici - tehnician sunet .jpeg')
     
 
  
