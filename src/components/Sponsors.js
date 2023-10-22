@@ -22,12 +22,43 @@ function Sponsors() {
           <div className="col-md-2 text-center">
             <img src={image1} alt="Sponsor" className="img-fluid mb-3" />
           </div>
+          <div className="row justify-content-center">
+        <div className="col-md-6 text-center video-container">
+          <div className="video-responsive">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/m3iGLhO2vvI"
+              title="YouTube video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+                            </div>
+      </div>
         </div>
         
         <div className="row justify-content-center">
           <div className="col-md-2 text-center">
             <img src={image5} alt="Sponsor" className="img-fluid mb-3" />
           </div>
+          <div className="row justify-content-center">
+        <div className="col-md-6 text-center video-container">
+          <div className="video-responsive">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/yqlPezJgWPk"
+              title="YouTube video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+                            </div>
+      </div>
+          
         </div>
         <div className="row justify-content-center">
           <div className="col-md-2 text-center">
