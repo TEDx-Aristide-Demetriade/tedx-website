@@ -5,6 +5,7 @@ import image2 from './resources/logoCompanii/Webamboos_Logomark_Color.png';
 import image3 from './resources/logoCompanii/Network3.0.png';
 import image4 from './resources/logoCompanii/DecoShift(0)_page-0001.jpg';
 import image6 from './resources/logoCompanii/REGHINA_BLUE.jpg';
+import image7 from './resources/logoCompanii/logoAma.png';
 
 import './cssCustom/customSponsors.css'; // Import your CSS file for styling
 
@@ -129,6 +130,11 @@ function Sponsors() {
       <div className="row justify-content-center">
           <div className="col-md-2 text-center">
             <img src={image6} alt="Sponsor" className="img-fluid mb-3" />
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-md-2 text-center">
+            <img src={image7} alt="Sponsor" className="img-fluid mb-3" />
           </div>
         </div>
        
