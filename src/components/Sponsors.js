@@ -7,7 +7,7 @@ import image4 from './resources/logoCompanii/DecoShift(0)_page-0001.jpg';
 import image6 from './resources/logoCompanii/reghinaBlue.png';
 import image7 from './resources/logoCompanii/logoAma.png';
 import image8 from './resources/logoCompanii/coworkTimisoara.jpg';
-import image9 from './resources/logoCompanii/expresimo2008.jpg';
+import image9 from './resources/logoCompanii/expresimo.jpg';
 import image10 from './resources/logoCompanii/radissonblu_2.jpg';
 import image11 from './resources/logoCompanii/plexive_2.jpg';
 
