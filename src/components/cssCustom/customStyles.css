@@ -142,6 +142,19 @@
   opacity: 0.5;
 }
 
+.custom-agenda-img {
+  /* Example styles */
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+
+  /* Hover effect */
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import "~bootstrap-icons/font/bootstrap-icons.css";

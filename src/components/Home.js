@@ -6,8 +6,7 @@ import './cssCustom/customStyles.css';
 import videoSource from './resources/videos/Firestarters.mp4';
 import imagine1 from './resources/pictures/image00003.jpeg';
 import coverImage from './resources/pictures/poza_profil.png'; // Replace with the actual path to your cover image
-
-
+import imgAgenda from './resources/pictures/agendaEveniment.jpeg';
 
 
 function Home () {
@@ -73,6 +72,19 @@ function Home () {
   
 
 </div>
+
+ {/* Agenda Image Section */}
+ <div className="container my-4">
+        <div className="row">
+          <div className="col text-center">
+            <img
+              src={imgAgenda}
+              alt="Agenda"
+              className="img-fluid custom-agenda-img" // Add your custom class here
+            />
+          </div>
+        </div>
+      </div>
 
 
 
